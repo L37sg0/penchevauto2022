@@ -17,6 +17,9 @@ services:
     volumes:
       - ./:/var/www
       - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      l37sg0com_default:
+
 
   # NGINX Service
   web:
@@ -27,5 +30,10 @@ services:
     volumes:
       - ./:/var/www
       - ./nginx/conf.d/:/etc/nginx/conf.d/
-    ports:
-        - "80:80"
+    networks:
+      l37sg0com_default:
+
+# Custom networks
+networks:
+  l37sg0com_default:
+    external: true
