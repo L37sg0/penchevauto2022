@@ -32,6 +32,9 @@ services:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
     networks:
       l37sg0com_default:
+    ports:
+      - "8081:443"
+      - "8080:80"
 
 # Custom networks
 networks:
