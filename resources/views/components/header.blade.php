@@ -1,6 +1,6 @@
 <div class="image-wrap">
     <div class="img-content">
-        <img src="https://penchevauto.l37sg0.com/images/banner2.jpg" alt="BANNER">
+        <img src="{{asset('/images/banner2.jpg')}}" alt="BANNER">
     </div>
         <div class="overlay"></div>
 </div>
